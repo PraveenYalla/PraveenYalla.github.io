@@ -2140,8 +2140,6 @@ a:hover {
 [data-arts-footer-logo=primary] .logo__img-primary {
   opacity: 1;
   visibility: visible;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
 }
 [data-arts-footer-logo=primary] .logo__img-secondary {
   opacity: 0;
@@ -2155,8 +2153,6 @@ a:hover {
 [data-arts-footer-logo=secondary] .logo__img-secondary {
   opacity: 1;
   visibility: visible;
-  -webkit-filter: brightness(0) invert(1); /* Safari 6.0 - 9.0 */
-  filter: brightness(0) invert(1);
   
 }
 
@@ -3217,8 +3213,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 [data-arts-header-logo=primary] .logo__img-primary {
   opacity: 1;
   visibility: visible;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
 }
 
 
@@ -3234,8 +3228,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 [data-arts-header-logo=secondary] .logo__img-secondary {
   opacity: 1;
   visibility: visible;
-  -webkit-filter: brightness(0) invert(1); /* Safari 6.0 - 9.0 */
-  filter: brightness(0) invert(1);
 }
 
 
@@ -3270,6 +3262,12 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   opacity: 1;
   visibility: visible;
 }
+
+.header_sticky[data-arts-header-sticky-logo=primary] .header__container {
+  background: none;
+} 
+
+
 .header_sticky[data-arts-header-sticky-logo=primary] .logo__img-secondary {
   opacity: 0;
   visibility: hidden;
@@ -3287,8 +3285,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 .header_sticky[data-arts-header-sticky-logo=secondary] .logo__img-secondary {
   opacity: 1;
   visibility: visible;
-  -webkit-filter: brightness(0) invert(1); /* Safari 6.0 - 9.0 */
-  filter: brightness(0) invert(1);
 }
 .header_sticky[data-arts-header-sticky-logo=secondary] .logo__text-title {
   color: #fff;
@@ -3987,11 +3983,19 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 }
 
 .overlay_top-dark {
-  background-image: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
+  background-image: linear-gradient(180deg, #ffffff 0%, rgba(0, 0, 0, 0) 100%);
 }
 
+.overflow_top_side_dark{
+  background-image: linear-gradient(180deg, #ffffff 0%, rgba(17, 17, 17, 0) 50%), linear-gradient(0deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
+}
+
+
 .overlay_light {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.overlay_dark {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /*!========================================================================
