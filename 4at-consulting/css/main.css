@@ -11689,3 +11689,51 @@ small, .small {
   top: 0;
   left: 0;
 }
+
+
+.custom-slide .slider__bg{
+  background-size: 90%;
+  background-position: center right;
+  transform: none;
+}
+
+.extra-menu{
+  position: absolute;
+  right: 100px;
+  top: 32px;
+}
+
+.extra-menu ul li{
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.extra-menu .active-menu{
+  color: #2096ca;
+}
+
+
+
+.techlists .wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.techlists .figure-feature{
+  outline: none;
+}
+
+
+.solutions .figure-feature{
+  padding: 20px;
+  outline: none;
+  border: thin solid #aaa;
+}
+
+.solutions .tech-icon{
+  width: 32px;
+  margin: 0 auto;
+  height: 32px;
+}
+
