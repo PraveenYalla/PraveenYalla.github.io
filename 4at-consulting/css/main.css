@@ -3758,7 +3758,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 .logo__wrapper-img img {
   transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   display: block;
-  height: 100px;
+  height: 80px;
 }
 
 .logo__text-title {
@@ -11706,7 +11706,7 @@ small, .small {
 
 .extra-menu ul li{
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 24px;
 }
 
 .extra-menu .active-menu{
