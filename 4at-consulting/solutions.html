@@ -191,7 +191,7 @@
     <header class="header header_menu-right header_fixed container-fluid js-header-sticky" id="page-header"
       data-arts-theme-text="dark" data-arts-header-sticky-theme="bg-light-2" data-arts-header-logo="primary"
       data-arts-header-sticky-logo="primary" data-arts-header-overlay-theme="light"
-      data-arts-header-overlay-background="#000">
+      data-arts-header-overlay-background="#fff">
       <!-- top bar -->
       <div class="header__container header__controls">
         <div class="row justify-content-between align-items-center">
@@ -206,7 +206,7 @@
             </a>
           </div>
           <!-- - logo -->
-          <div class="col-auto header__col extra-menu">
+          <div class="col-auto header__col header__col-left extra-menu">
             <ul class="menu-overlay js-menu-overlay">
               <li class="menu-item-has-children">
                 <a href="technology-landscape.html" data-pjax-link="overlayMenu">
@@ -375,6 +375,12 @@
                 </div>
               </a>
             </li>
+            <li class="menu-item-has-children"><a class="h2" href="technology.html" data-pjax-link="overlayMenu">
+                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">
+                  Technology
+                </div>
+              </a>
+            </li>
             <li class="menu-item-has-children"><a class="h2" href="blogs.html" data-pjax-link="overlayMenu">
                 <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Blogs
                 </div>
@@ -451,11 +457,11 @@
         </section>
 
 
-        <section class="section section-grid section-content overflow bg-light-2 pt-small pb-small"
+        <section class="section section-grid section-content overflow bg-light-2 "
           data-arts-os-animation="data-arts-os-animation" data-grid-columns="3" data-grid-tablet="2"
           data-grid-mobile="1">
           <div class="container">
-            <div class="row justify-content-between align-items-center section pb-small">
+            <div class="row justify-content-between align-items-center section pt-small pb-small">
               <div class="col-12 col-lg-auto">
                 <div class="filter js-filter">
                   <div class="filter__inner">
@@ -464,31 +470,31 @@
                       <div class="row justify-content-center">
                         <!-- all (*) -->
                         <div class="col-lg-auto col-12 filter__item filter__item_active js-filter__item"
-                          data-filter=".sme">
+                          data-filter=".sme" id="sme">
                           <div class="split-text js-split-text" data-split-text-type="lines,words"
-                            data-split-text-set="words">SME</div>
+                            data-split-text-set="words" >SME</div>
                         </div>
                         <!-- - all (*) -->
-                        <div class="col-lg-auto col-12 filter__item js-filter__item" data-filter=".retail">
+                        <div class="col-lg-auto col-12 filter__item js-filter__item" data-filter=".retail" id="retail">
                           <div class="split-text js-split-text" data-split-text-type="lines,words"
-                            data-split-text-set="words">Retail</div>
+                            data-split-text-set="words" >Retail</div>
                         </div>
                         <div class="col-lg-auto col-12 filter__item js-filter__item"
-                          data-filter=".category-ui-ux-design">
+                          data-filter=".category-ui-ux-design"  id="service">
                           <div class="split-text js-split-text" data-split-text-type="lines,words"
                             data-split-text-set="words">Service</div>
                         </div>
-                        <div class="col-lg-auto col-12 filter__item js-filter__item" data-filter=".category-branding">
+                        <div class="col-lg-auto col-12 filter__item js-filter__item" data-filter=".category-branding" id="automobile">
                           <div class="split-text js-split-text" data-split-text-type="lines,words"
-                            data-split-text-set="words">Automobile</div>
+                            data-split-text-set="words" >Automobile</div>
                         </div>
-                        <div class="col-lg-auto col-12 filter__item js-filter__item" data-filter=".category-branding">
+                        <div class="col-lg-auto col-12 filter__item js-filter__item" data-filter=".category-branding" id="healthcare">
                           <div class="split-text js-split-text" data-split-text-type="lines,words"
-                            data-split-text-set="words">Healthcare</div>
+                            data-split-text-set="words" >Healthcare</div>
                         </div>
-                        <div class="col-lg-auto col-12 filter__item js-filter__item" data-filter=".category-branding">
+                        <div class="col-lg-auto col-12 filter__item js-filter__item" data-filter=".category-branding" id="education">
                           <div class="split-text js-split-text" data-split-text-type="lines,words"
-                            data-split-text-set="words">Education</div>
+                            data-split-text-set="words" >Education</div>
                         </div>
                         <!-- - items-->
                       </div>
@@ -504,7 +510,7 @@
 
             <div class="col-lg-12  no-gutters">
               <div id="solution-item">
-                
+
               </div>
             </div>
 
@@ -569,8 +575,8 @@
               <section class="widget widget_text">
                 <div class="textwidget">
                   <ul class="footer_links">
-                    <li><a href="#">Terms and Coditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="terms-and-conditions.html">Terms and Coditions</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
                   </ul>
                 </div>
 

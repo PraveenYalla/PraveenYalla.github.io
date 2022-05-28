@@ -187,7 +187,7 @@
 	if (typeof window.theme === 'undefined') {
 		window.theme = {
 			ajax: {
-				enabled: true,
+				enabled: false,
 				preventRules: '' // jQuery selectors of the elements to exclude them from AJAX transitions
 			},
 			animations: {
@@ -5002,6 +5002,10 @@
 				columnWidth: '.js-grid__sizer',
 				percentPosition: true,
 				horizontalOrder: true,
+				layoutMode: 'fitRows',
+				fitRows: {
+					gutter: 10
+				}
 			});
 
 			setTimeout(() => {
@@ -9655,16 +9659,15 @@
 	}
 
 
-	$(document).ready(function () {
 
-		function getInnerdata(data) {
-			var str = ``;
-			$(data.productDetails).each(function (index, item) {
-				str += `
-			<div class="grid__item col-lg-2 js-grid__item ${data.icon}">
+	function getInnerdata(data, filterClass) {
+		var str = ``;
+		$(data.productDetails).each(function (index, item) {
+			str += `
+			<div class="grid__item col-lg-2 js-grid__item ${filterClass}">
 				<div class="section-grid__item">
 				<a class="figure-project hover-zoom js-change-text-hover"
-					href="project-details-1-fullscreen-center.html">
+					href="#">
 					<div class="figure-project__content">
 					<div class="section-grid__item">
 						<div class="figure-feature">
@@ -9682,30 +9685,57 @@
 				</a>
 				</div>
 			</div>`
-			})
-			return str;
-		}
+		})
+		return str;
+	}
 
 
-		$.getJSON("data/data.json", function (data) {
-			console.log(data);
+	function getSolutionsList(type) {
+		$('#solution-item').html("");
+		$.getJSON(`data/${type}.json`, function (data) {
 			var str = $('#solution-item').html();
-			$(data).each(function (index, item) {
+			$(data.response).each(function (index, item) {
 				str += `<div class="row solutions">`
 				str += `<div class="col-lg-12">`
 				str += `<h4>${item.productCategory}</h4>`
 				str += `</div>`
 				str += `</div>`
-				str += `<div class="row js-grid solutions">`
-				str += getInnerdata(item)
+				str += `<div class="row js-grid solutions grid">`
+				str += getInnerdata(item, type)
 				str += `</div>`
 			});
-			// str += '</select></div></div>';
 			$('#solution-item').html(str);
 		})
+		return false
+
+	}
 
 
-	})
+	getSolutionsList("sme");
+
+	$("#sme").on("click", function () {
+		getSolutionsList("sme");
+	});
+
+	$("#retail").on("click", function () {
+		getSolutionsList("retail");
+	});
+
+	$("#service").on("click", function () {
+		getSolutionsList("service");
+	});
+
+	$("#automobile").on("click", function () {
+		getSolutionsList("automobile");
+	});
+
+	$("#healthcare").on("click", function () {
+		getSolutionsList("healthcare");
+	});
+
+	$("#education").on("click", function () {
+		getSolutionsList("education");
+	});
 
 
 })(jQuery);

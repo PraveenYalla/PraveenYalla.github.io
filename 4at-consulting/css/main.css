@@ -11701,6 +11701,7 @@ small, .small {
   position: absolute;
   right: 100px;
   top: 32px;
+  z-index: 499;
 }
 
 .extra-menu ul li{
@@ -11712,7 +11713,13 @@ small, .small {
   color: #2096ca;
 }
 
+.grid{
+  padding: 15px 0;
+}
 
+.grid__item{
+  margin: 10px 0;
+}
 
 .techlists .wrapper{
   display: flex;
@@ -11724,9 +11731,12 @@ small, .small {
   outline: none;
 }
 
+#solution-item{
+  min-height: 500px;
+}
 
 .solutions .figure-feature{
-  padding: 20px;
+  padding: 20px 5px;
   outline: none;
   border: thin solid #aaa;
 }
@@ -11737,3 +11747,30 @@ small, .small {
   height: 32px;
 }
 
+.filter__item_active{
+ color: #2096ca; 
+}
+
+.section-masthead__header_absolute{
+  background: #2096ca85;
+}
+
+.swiper-slide{
+  font-size: 14px;
+}
+.swiper-slide h1{
+  line-height: 24px;
+}
+
+.list-projects__thumbnail{
+  width: 100px;
+  height: 100px;
+}
+
+.services .list-projects__heading{
+  font-size: 34px;
+}
+
+.features .block-circle{
+  padding:14px;
+}
