@@ -3165,13 +3165,19 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 }
 
 @media screen and (max-width: 991px) {
+
+  .logo-wrapper img{
+    height: 60px !important;
+  }
+  
+
   .header__wrapper-overlay-menu {
     text-align: center;
   }
 
   .header__wrapper-menu {
     max-width: 100%;
-    margin-top: calc(var(--gutter-horizontal) * 2);
+    margin-top: calc(var(--gutter-horizontal) * 5);
     margin-bottom: calc(var(--gutter-horizontal) * 2);
   }
 
@@ -5977,6 +5983,7 @@ select {
   margin-bottom: 0;
   font-size: 3em !important;
   line-height: 1.5 !important;
+  text-transform: capitalize;
 }
 
 .slider__arrow_absolute {
@@ -11773,4 +11780,8 @@ small, .small {
 
 .features .block-circle{
   padding:14px;
+}
+
+.logo-wrapper{
+  margin-left: 50px;
 }
