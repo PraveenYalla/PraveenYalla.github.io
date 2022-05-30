@@ -11707,7 +11707,7 @@ small, .small {
 .extra-menu{
   position: absolute;
   right: 100px;
-  top: 32px;
+  top: 14px;
   z-index: 499;
 }
 
@@ -11854,7 +11854,21 @@ small, .small {
 
 
 
+@media screen  and (max-width: 1280px) {
+  .logo__wrapper-img img{
+    height: 60px;
+  }
+}
+
 @media screen and (max-width: 1280px) {
+  .extra-menu{
+    top: 8px;
+  }
+}
+
+
+@media screen and (min-width: 1280px)  and (max-width: 1280px) {
+ 
   .menu-overlay > li > a{
     font-size: 30px;
   }
