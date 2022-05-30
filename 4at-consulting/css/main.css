@@ -11785,3 +11785,25 @@ small, .small {
 .logo-wrapper{
   margin-left: 50px;
 }
+
+
+.header__wrapper-overlay-menu{
+  position: static;
+  padding-top: 0;
+}
+
+.header__wrapper-overlay-widgets{
+  margin-top: 15%;
+}
+
+.header__overlay-menu-back{
+  top: 200px;
+}
+
+.header__wrapper-menu{
+  margin-top: 50px;
+}
+
+.section-properties{
+  text-transform: uppercase;
+}
