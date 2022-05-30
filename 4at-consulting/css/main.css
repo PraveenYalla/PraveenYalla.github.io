@@ -11713,7 +11713,7 @@ small, .small {
 
 .extra-menu ul li{
   display: inline-block;
-  margin: 0 24px;
+  margin-left: 24px;
 }
 
 .extra-menu .active-menu{
@@ -11839,6 +11839,7 @@ small, .small {
 }
 
 @media screen and (max-width: 991px) {
+  
     .extra-menu{
       display: none;
     }
@@ -11849,4 +11850,12 @@ small, .small {
     .menu-mobile .sub-menu, .menu-mobile .sub-menu.opened{
       top: 170px;
     }
+}
+
+
+
+@media screen and (max-width: 1280px) {
+  .menu-overlay > li > a{
+    font-size: 30px;
+  }
 }
