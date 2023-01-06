@@ -11869,7 +11869,7 @@ small, .small {
 
 @media screen and (min-width: 1280px)  and (max-width: 1280px) {
  
-  .menu-overlay > li > a{
-    font-size: 30px;
+  .extra-menu .menu-overlay > li > a{
+    font-size: 18px;
   }
 }
