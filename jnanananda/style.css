@@ -1031,6 +1031,7 @@ p {
 }
 .about-five-content{
   padding-left: 50px;
+  margin-top: 16px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-five-content {
@@ -1117,6 +1118,7 @@ p {
 .about-image-five {
   position: relative;
   z-index: 2;
+  height: 100%;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-image-five {
@@ -1155,6 +1157,8 @@ p {
 .about-image-five img {
   width: 100%;
   z-index: 2;
+  object-fit: cover;
+  height: 100%;
 }
 
 
