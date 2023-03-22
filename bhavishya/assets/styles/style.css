@@ -1345,7 +1345,7 @@ body,
     right: 0;
     top: 120px;
     max-width: 350px;
-    box-shadow: 0 0 10px #cccccc;
+    /* box-shadow: 0 0 10px #cccccc; */
     border-radius: 10px;
     border: none !important;
 }
@@ -1609,9 +1609,9 @@ body,
 
 
 .banner-area.bg-half-dark.auto-height .content-box .thumb-inner img {
-    border: 2px solid #e7e7e7;
+    /* border: 2px solid #e7e7e7; */
     border-radius: 16px;
-    border-top: 1px solid#e7e7e7;
+    /* border-top: 1px solid#e7e7e7; */
 }
 
 .banner-area .left-shape {
