@@ -419,6 +419,9 @@ hr {
   position: relative;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .home-page {
+    margin-top: 54px;
+  }
   .section-tittle {
     margin-bottom: 50px;
   }
@@ -426,6 +429,9 @@ hr {
 @media (max-width: 575px) {
   .section-tittle {
     margin-bottom: 50px;
+  }
+  .home-page {
+    margin-top: 54px;
   }
 }
 .section-tittle p {
@@ -486,6 +492,9 @@ hr {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-page {
+    margin-top: 54px;
+  }
   .section-tittle h2 {
     font-size: 30px;
   }
@@ -837,6 +846,9 @@ hr {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-page {
+    margin-top: 54px;
+  }
   .header-area .header-top {
     padding: 17px 20px;
   }
@@ -1173,7 +1185,7 @@ hr {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .slider-area .hero-caption h1 {
-    font-size: 58px;
+    font-size: 38px;
   }
 }
 @media (max-width: 575px) {
